@@ -1,0 +1,25 @@
+{
+  "name": "appiness-interactive",
+  "version": "1.0.0",
+  "description": "Appiness Practical Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikasv996/appiness-interactive.git"
+  },
+  "author": "Vikas Valechha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikasv996/appiness-interactive/issues"
+  },
+  "homepage": "https://github.com/vikasv996/appiness-interactive#readme",
+  "dependencies": {
+    "async": "^3.2.0",
+    "body-parser": "latest",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}

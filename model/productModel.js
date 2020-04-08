@@ -1,0 +1,18 @@
+const config = require('../config.js').get(process.env.NODE_ENV);
+const CONSTANT = require('../constant/constants');
+const dbUtils = require('../utils/dbUtils');
+
+module.exports.listProducts = function (id) {
+    if (config.DEBUG) console.log(new Date().toISOString() + " productModel: listProducts ++");
+    const LIST_PRODUCTS_SQL = `SELECT name FROM ${CONSTANT.TABLE_PRODUCT} WHERE category_id = ${id};`;
+    if (config.DEBUG) console.log(new Date().toISOString() + " productModel: listProducts --");
+    return new Promise((resolve, reject) => {
+        dbUtils.getDatabase().query(LIST_PRODUCTS_SQL)
+            .then(res => {
+                resolve(res);
+            })
+            .catch(err => {
+                reject(err);
+            })
+    })
+};

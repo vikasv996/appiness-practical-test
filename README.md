@@ -1,2 +1,1 @@
-# appiness-practical-test
-Appiness Practical Test
+*Appiness Practical Test
