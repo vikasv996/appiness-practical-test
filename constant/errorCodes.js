@@ -17,3 +17,8 @@ module.exports.somethingWentWrong = {
     code: 103,
     message: 'Something went wrong. Please try again.'
 };
+
+module.exports.categoriesNotFound = {
+    code: 104,
+    message: 'No categories found'
+};
